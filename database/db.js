@@ -5,7 +5,10 @@ dev.config();
 // const url=process.env.mongodbLocalURL;
 // for cloud
 const url=process.env.mongoURL;
-mongoose.connect(url);
+mongoose.connect(url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 const db =mongoose.connection;
 db.on('connected' ,()=>{
     console.log("Connected to database");
