@@ -15,7 +15,6 @@ const logFile=(req,res,next)=>{
 app.use(logFile);
 import dev from 'dotenv'
 dev.config();
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 const port=process.env.Port || 3000;
 app.get('/',(req,res)=>{
     try{
