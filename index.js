@@ -2,7 +2,9 @@ import express from 'express'
 const app=express();
 import db from './database/db.js'
 import fs from 'fs';
-const port=800;
+import dev from 'dotenv'
+dev.config();
+const port=process.env.Port || 800;
 import studentRoute from './routes/studentRoute.js';
 import teacherRoute from './routes/teacherRoute.js';
 import otpRoute from './otp.js'; 
