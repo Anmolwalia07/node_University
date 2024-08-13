@@ -26,3 +26,6 @@ new Wed Aug 14 2024 00:25:55 GMT+0530 (India Standard Time) /student GET
 new Wed Aug 14 2024 00:29:57 GMT+0530 (India Standard Time) /student GET 
 new Wed Aug 14 2024 00:30:45 GMT+0530 (India Standard Time) /student POST 
 new Wed Aug 14 2024 00:31:00 GMT+0530 (India Standard Time) /student GET 
+new Wed Aug 14 2024 01:21:13 GMT+0530 (India Standard Time) / GET 
+new Wed Aug 14 2024 01:21:15 GMT+0530 (India Standard Time) /favicon.ico GET 
+new Wed Aug 14 2024 01:21:35 GMT+0530 (India Standard Time) / GET 
