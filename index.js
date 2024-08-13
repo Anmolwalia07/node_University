@@ -28,7 +28,7 @@ app.get('/',(req,res)=>{
 app.use('/teacher',teacherRoute);
 app.use('/student',studentRoute);
 // app.use('/user/otp',otpRoute); 
-app.listen(800,()=>{
+app.listen(port,()=>{
     try{
         console.log(`Sever is listen from ${port}`);
     }
