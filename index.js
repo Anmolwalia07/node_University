@@ -4,6 +4,7 @@ import db from './database/db.js'
 import fs from 'fs';
 import dev from 'dotenv'
 dev.config();
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 const port=process.env.Port || 3000;
 import studentRoute from './routes/studentRoute.js';
 import teacherRoute from './routes/teacherRoute.js';

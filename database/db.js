@@ -1,14 +1,12 @@
 import mongoose from  'mongoose'
 import dev from 'dotenv'
 dev.config();
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 // for local
 // const url=process.env.mongodbLocalURL;
 // for cloud
 const url=process.env.mongoURL;
-mongoose.connect(url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+mongoose.connect(url);
 const db =mongoose.connection;
 db.on('connected' ,()=>{
     console.log("Connected to database");
