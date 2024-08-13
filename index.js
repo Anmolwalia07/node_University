@@ -4,7 +4,7 @@ import db from './database/db.js'
 import fs from 'fs';
 import dev from 'dotenv'
 dev.config();
-const port=process.env.Port || 800;
+const port=process.env.Port || 3000;
 import studentRoute from './routes/studentRoute.js';
 import teacherRoute from './routes/teacherRoute.js';
 import otpRoute from './otp.js'; 
